@@ -20,6 +20,8 @@ async function createAndLogin(email: string) {
 
   const user = await createUser(email, "myreallystrongpassword");
 
+  //you need to provide a valid URL to the Request object. Determine the appropriate URL for your application and pass it as a string to the Request object.
+  
   const request = new Request("https://remix-zpdz.onrender.com/"); // Replace with the appropriate URL
   const response = await createUserSession({
     request,
