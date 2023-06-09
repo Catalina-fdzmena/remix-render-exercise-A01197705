@@ -3,7 +3,6 @@
 // npx ts-node --require tsconfig-paths/register ./cypress/support/create-user.ts username@example.com
 // and it will log out the cookie value you can use to interact with the server
 // as that new user.
-
 import { parse } from "cookie";
 import { installGlobals } from "@remix-run/node";
 import { createUserSession } from "~/session.server";
@@ -21,8 +20,9 @@ async function createAndLogin(email: string) {
 
   const user = await createUser(email, "myreallystrongpassword");
 
+  const request = new Request("https://remix-zpdz.onrender.com/"); // Replace with the appropriate URL
   const response = await createUserSession({
-    request: new Request(""),
+    request,
     userId: user.id,
     remember: false,
     redirectTo: "/",
@@ -45,3 +45,4 @@ async function createAndLogin(email: string) {
 }
 
 createAndLogin(process.argv[2]);
+
