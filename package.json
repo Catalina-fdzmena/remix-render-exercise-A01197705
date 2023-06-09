@@ -33,7 +33,6 @@
   ],
   "dependencies": {
     "@prisma/client": "^3.11.1",
-    "@remix-run/node": "*",
     "@remix-run/react": "*",
     "@remix-run/serve": "*",
     "@remix-run/server-runtime": "*",
@@ -47,6 +46,7 @@
     "@faker-js/faker": "^6.1.1",
     "@remix-run/dev": "*",
     "@remix-run/eslint-config": "*",
+    "@remix-run/node": "^1.17.0",
     "@testing-library/cypress": "^8.0.2",
     "@testing-library/dom": "^8.12.0",
     "@testing-library/jest-dom": "^5.16.3",
