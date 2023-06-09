@@ -41,7 +41,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remix": "^1.17.0",
-    "tiny-invariant": "^1.2.0"
+    "tiny-invariant": "^1.2.0",
+    "typecheck": "^0.1.2"
   },
   "devDependencies": {
     "@faker-js/faker": "^6.1.1",
